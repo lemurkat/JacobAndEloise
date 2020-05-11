@@ -1,0 +1,263 @@
+{
+	"Format": "1.14", 
+	"Changes": [
+	
+		{
+		
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions", 
+			"Entries": { 
+			
+				"Jacob": "adult/polite/shy/positive/male/not-datable/null/Town/summer 27/Eloise 'darling daughter'/VetHouse 19 4/Jacob",
+				"Eloise": "child/polite/outgoing/positive/female/not-datable/null/Town/spring 22/Jacob 'dad'/VetHouse 33 23/Eloise"		
+			        }
+		},
+		
+		{
+		
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Jacob": "Thank you! I love it./205 210 241 282/Thanks, this is great./344 342 350 395/Thanks... it's the thought that counts, I guess.../16 800/I'm not sure why you're giving me this? Is this a prank?/232 250/Many thanks!//",
+				"Eloise": "Oh! I love it. You're the bestest!/18 221 444 394 107/Thanks, this is wicked!/-2 113 174 176 180 223 442 233/I don't like this./-4/Ewww, this is gross!/88 190 236 346 395 800/Thank you for the kind gift.//"
+				      }
+		},
+//Jacob loves survival burger, hashbrowns, fried mushroom, cranberries. Likes jelly, pickles, juice, coffee. Dislikes horse radish, blobfish. Hates rice pudding, kale.
+//Eloise loves: daffodil, rainbow shell, duck feathers, pink cake, dinosaur egg
+//likes chicken statue, cookies, eggs, ice cream, gemstones
+//Dislikes fish, hates blobfish, cauliflower, coconut, coffee, beer
+
+{
+	"LogName": "Animations",
+	"Action": "EditData",
+	"Target": "Data/animationDescriptions",
+	"Entries": {
+		  "Eloise_kneel": "8/16/8",
+		  "Eloise_read": "8 17/18 18 18 18 18 18 18 19 19 19 19 19 19 19/8"
+		  
+	}
+  },
+
+//Jacob
+					
+		{
+		
+			"LogName": "Jacob Portraits", 
+			"Action": "Load",
+			"Target": "Portraits/Jacob",
+			"FromFile": "assets/Images/DrJacobportraits.png"		
+		},
+		
+		{		
+			"LogName": "Jacob Sprites", 
+			"Action": "Load",
+			"Target": "Characters/Jacob",
+			"FromFile": "assets/Images/JacobSprites.png"			
+		},
+		
+		{
+			"LogName": "Dialogue", 
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Jacob",
+			"FromFile": "assets/Dialogue/JacobDialogue.json"
+		},
+		{
+			"LogName": "Schedule", 
+			"Action": "Load",
+			"Target": "Characters/schedules/Jacob",
+			"FromFile": "assets/Schedules/Jacobschedule.json"
+		},
+	
+//Eloise			
+{
+		
+    "LogName": "Eloise Portraits", 
+    "Action": "Load",
+    "Target": "Portraits/Eloise",
+    "FromFile": "assets/Images/Eloiseportraits-Overalls.png"		
+},
+
+
+{
+		
+    "LogName": "Eloise Portraits", 
+    "Action": "EditImage",
+    "Target": "Portraits/Eloise",
+    "FromFile": "assets/Images/Eloiseportraits.png",
+	"When":	{
+	"DayofWeek": "Tuesday, Wednesday, Friday"
+		}			
+},
+
+{		
+    "LogName": "Eloise Sprites", 
+    "Action": "Load",
+    "Target": "Characters/Eloise",
+    "FromFile": "assets/Images/Eloisesprites-Overalls.png"
+		
+},
+
+{		
+    "LogName": "Eloise Sprites", 
+    "Action": "EditImage",
+    "Target": "Characters/Eloise",
+    "FromFile": "assets/Images/Eloisesprites.png",
+	"When":	{
+	"DayofWeek": "Tuesday, Wednesday, Friday"
+		}		
+},
+{
+    "LogName": "Dialogue", 
+    "Action": "Load",
+    "Target": "Characters/Dialogue/Eloise",
+    "FromFile": "assets/Dialogue/EloiseDialogue.json"
+},
+{
+    "LogName": "Schedule", 
+    "Action": "Load",
+    "Target": "Characters/schedules/Eloise",
+    "FromFile": "assets/Schedules/Eloiseschedule.json"
+},
+
+{
+    "Action": "EditData",
+    "Target": "Strings/StringsFromMaps",
+    "Entries": {
+			   "VetHouse.01": "Sir Flufflekins the first wrinkles his nose and regards you suspiciously.",
+			   "VetHouse.02": "\"Rawk! I'm the real macaw!\"",
+			   "VetHouse.03": "They're all postmarked from the Gotoro Republic. Eloise must write to a friend there.",
+			   "VetHouse.04": "A selection of beautifully illustrated books about the flora and fauna of Stardew Valley.",
+			   "VetHouse.05": "Looks like this chair's taken! Her Ladyship Princess Midnight the Third eyes you regally. You feel judged, and found wanting.",
+			   "VetHouse.06": "Tiny colorful fish. It's very clean, but perhaps a little small? The fish seem restless.",
+			   "VetHouse.07": "It's tuned to the natural history channel. There's a documentary playing on birds of the rainforest.",
+			   "VetHouse.08": "It's filled with women's clothing, all neatly folded and packed with tissue paper. Either Dr. Jacob has diverse tastes, or they belonged to his wife.",
+			   "VetHouse.09": "Very neatly organized, there's a full set of the Ferngill enclyopedias, plus textbooks on animal anatomy and behaviour.",
+			   "VetHouse.10": "Ah, here's where all the paperbacks are hiding: From trillers, to horror, historic fiction and even a couple of romances; it's an eclectic range.",
+			   "VetHouse.11": "Eloise's taste range from animal stories to tales of children solving mysteries. They're in surprisingly good condition.",
+			   "VetHouse.12": "'The Mona Lisa Smile': obviously Dr Jacob indulges in fast-paced crime thrillers.",
+			   "Vethouse.13": "The plants all look well cared for. And what was that skittering across the soil, a lizard?",
+			   "VetHouse.14": "A large raccoon studies you warily. Its ears are tattered, like it's been in a fight with something.",
+			   "VetHouse.15": "The screensaver shows a dark-haired woman and a toddler with pigtails. His wife and Eloise, you assume.",
+			   "VetHouse.16": "Dr. Jacob's workbook:^There has been an increase in small animals brought in with contusions and crushed bones, suggesting the presence of predators in the area."
+
+
+                  }
+},
+
+//Jasmine Schedule
+{
+	"Action": "EditData",
+    "Target": "Characters/schedules/Jas",
+	"Entries": {
+	"9": "NOT friendship Sam 6 Penny 6/900 AnimalShop 7 5 0/1100 Forest 38 10 3 \"Strings\\schedules\\Jas:ellie.000\"/1500 AnimalShop 17 15 3 jas_read/1900 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep",
+	"Tue": "900 ArchaeologyHouse 19 10 3 jas_read/1400 Town 85 103 2/1620 Town 16 91 0/1750 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep"
+				}
+		},
+
+{	"Action": "EditData",
+		"Target": "Strings/schedules/Jas",
+		"Entries": {
+			"ellie.000": "Hear that noisy bird? It's a jerjar bird! He's my friend.$4"
+		}
+	},
+	{	"Action": "Load",
+		"Target": "Strings/schedules/Eloise",
+		"FromFile": "assets/Dialogue/EloiseStrings.json"
+		
+	},
+	{	"Action": "Load",
+		"Target": "Strings/schedules/Jacob",
+		"FromFile": "assets/Dialogue/JacobStrings.json"
+		
+	},
+	{ 
+		"LogName": "Adds LockedDoorWarp on Vet's Office",
+		"Action": "EditMap",
+		"Target": "Maps/VetHouse",
+		"MapTiles": [
+		  {
+			"Position": { "X": 5, "Y": 9 },
+			"Layer": "Buildings",
+		   "SetProperties": {
+				   "Action": "LockedDoorWarp 5 6 JacobOffice 2000 2600"
+				}
+			  }
+		  ],
+		  "When": { 
+			"DayofWeek": "Tuesday"
+				  }
+	  },
+	  { 
+		"LogName": "Adds LockedDoorWarp on Vet's Office",
+		"Action": "EditMap",
+		"Target": "Maps/VetHouse",
+		"MapTiles": [
+		  {
+			"Position": { "X": 5, "Y": 9 },
+			"Layer": "Buildings",
+		   "SetProperties": {
+				   "Action": "LockedDoorWarp 5 6 JacobOffice 800 1800"
+				}
+			  }
+		  ],
+		  "When": { 
+			"DayofWeek": "Monday, Wednesday, Thursday, Friday, Saturday, Sunday"
+				  }
+	  },
+
+	//Festivals
+
+	{  "LogName": "Luau Dialogue",
+		"Action": "EditData",
+		"Target": "data/festivals/summer11",
+		"Entries": {
+		  "Eloise": "Dancing's so silly! I hope we haven't scared all the birds away.",
+		  "Jacob": "Hello @. Just grabbing a little space to myself."
+		  
+			}
+	  },
+
+	  {  "LogName": "Luau Dialogue",
+		"Action": "EditData",
+		"Target": "data/festivals/summer11",
+		"Entries": {
+		    "Jacob": "Hello @. Just hanging out here with my good buddy Coppernicus."
+			  },
+		"When": {
+			"HasMod": "Lemurkat.NPCMrGinger, Lemurkat.MrGinger.NPC"
+				}
+	  	},
+	
+
+{
+
+	"LogName": "Eloise Sprites", 
+	"Action": "EditImage",
+	"Target": "Characters/Eloise",
+	"FromFile": "assets/Images/Eloisesprites.png",
+	"When":
+		{
+		"LocationName":"Temp",
+		"DayEvent": "Luau"
+		}
+},
+{
+
+	"LogName": "Eloise Portraits", 
+	"Action": "EditImage",
+	"Target": "Portraits/Eloise",
+	"FromFile": "assets/Images/Eloiseportraits.png",
+	"When":	{
+		"LocationName":"Temp",
+		"DayEvent": "Luau"
+		}
+	}	  
+
+
+
+]
+}
+		
+		
